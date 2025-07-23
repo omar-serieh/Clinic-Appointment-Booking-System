@@ -9,7 +9,6 @@ import com.spring.clinic.repository.EmailVerificationCodeRepository;
 import com.spring.clinic.repository.UsersRepository;
 import com.spring.clinic.security.JwtUtil;
 import org.springframework.http.HttpStatus;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;

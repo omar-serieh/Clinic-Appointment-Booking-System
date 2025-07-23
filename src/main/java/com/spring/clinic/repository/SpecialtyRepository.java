@@ -10,8 +10,6 @@ import java.util.Set;
 
 @Repository
 public interface SpecialtyRepository extends JpaRepository<Specialties,Long> {
-    @Query("SELECT s FROM Specialties s WHERE s.id IN :ids")
-    Set<Specialties> findSpecialtiesById(Set<Long> ids);
     @Query("SELECT s FROM Specialties s")
     Set<Specialties> findAllSpecialties();
     Specialties findSpecialtiesById(long id);
